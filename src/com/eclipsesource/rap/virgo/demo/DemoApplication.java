@@ -9,6 +9,12 @@ import org.eclipse.swt.widgets.Shell;
 
 public class DemoApplication implements IEntryPoint {
 
+	private String buttonText;
+
+	public void setButtonText(String buttonText) {
+		this.buttonText = buttonText;
+	}
+
 	@Override
 	public int createUI() {
 		Display display = new Display();
@@ -18,7 +24,7 @@ public class DemoApplication implements IEntryPoint {
 		mainShell.setLayout(new GridLayout());
 
 		Button button = new Button(mainShell, SWT.PUSH);
-		button.setText("Hello Virgo world!");
+		button.setText(buttonText);
 
 		mainShell.layout();
 		mainShell.open();

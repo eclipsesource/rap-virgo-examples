@@ -5,7 +5,17 @@
   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/osgi http://www.springframework.org/schema/osgi/spring-osgi.xsd">
  
- 	<bean id="simpleConfiguration" class="com.eclipsesource.rap.virgo.demo.DemoApplicationConfiguration" />
+ 	<bean id="entryPoint" class="com.eclipsesource.rap.virgo.demo.DemoApplication">
+ 		<property name="buttonText" value="Hello from Spring" />
+ 	</bean>
+
+ 	<bean id="entryPointFactory" class="com.eclipsesource.rap.virgo.demo.DemoApplicationEntryPointFactory">
+ 		<property name="entryPoint" ref="entryPoint" />
+ 	</bean>
+
+ 	<bean id="simpleConfiguration" class="com.eclipsesource.rap.virgo.demo.DemoApplicationConfiguration">
+ 		<property name="entryPointFactory" ref="entryPointFactory" />
+ 	</bean>
 
     <osgi:service ref="simpleConfiguration" interface="org.eclipse.rwt.application.ApplicationConfiguration" />
 </beans>
