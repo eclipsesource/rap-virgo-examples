@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-Version: 1.0.0
+Bundle-Name: RAP virgo Demo
+Bundle-ManifestVersion: 2
+Bundle-Description: Hello World RAP application running on Virgo
+Bundle-SymbolicName: com.eclipsesource.rap.virgo.demo
+Import-Bundle: org.eclipse.rap.rwt;version="[1.5.0.20120605-1606,1.5.0.20120605-1606]"
+
