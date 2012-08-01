@@ -2,9 +2,10 @@ package com.eclipsesource.rap.virgo.demo;
 
 import org.eclipse.rwt.lifecycle.IEntryPoint;
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
-import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 
 public class DemoApplication implements IEntryPoint {
@@ -17,8 +18,9 @@ public class DemoApplication implements IEntryPoint {
 		mainShell.setMaximized(true);
 		mainShell.setLayout(new GridLayout());
 
-		Button button = new Button(mainShell, SWT.PUSH);
-		button.setText("Hello Virgo world!");
+		Label label = new Label(mainShell, SWT.NONE);
+		label.setText("Hello Virgo world!");
+		label.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, true, true));
 
 		mainShell.layout();
 		mainShell.open();
