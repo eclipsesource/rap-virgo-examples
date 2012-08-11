@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.osgi.org/xmlns/blueprint/v1.0.0 http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd">
+
+	<reference id="datasource" interface="javax.sql.DataSource" />
+
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="datasource" />
+	</bean>
+
+	<bean id="sqlCommandProvider" class="com.eclipsesource.examples.virgo.blueprint.sql.SqlCommandProvider">
+		<property name="jdbcTemplate" ref="jdbcTemplate" />
+	</bean>
+
+	<service ref="sqlCommandProvider" auto-export="all-classes">
+		<service-properties>
+			<entry key="osgi.command.scope">
+				<value>sql</value>
+			</entry>
+			<entry key="osgi.command.function">
+				<array value-type="java.lang.String">
+					<value>execute</value>
+					<value>queryForInt</value>
+				</array>
+			</entry>
+		</service-properties>
+	</service>
+
+</blueprint>
