@@ -15,9 +15,9 @@
 		<dependency>
 			<groupId>org.eclipse.rap</groupId>
 			<artifactId>org.eclipse.rap.rwt</artifactId>
-			<version>2.0.0.20120821-1934</version>
+			<version>2.0.0.20121001-1623</version>
 			<scope>system</scope>
-			<systemPath>${project.basedir}/libs/org.eclipse.rap.rwt_2.0.0.20120821-1934.jar</systemPath>
+			<systemPath>${project.basedir}/libs/org.eclipse.rap.rwt_2.0.0.20121001-1623.jar</systemPath>
 		</dependency>
 	</dependencies>
 </project>

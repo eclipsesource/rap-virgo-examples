@@ -6,4 +6,4 @@ Bundle-Description: ECLIPSESOURCE
 Bundle-SymbolicName: com.eclipsesource.rap.examples.helloworld.webbundle
 Web-ContextPath: /helloworld
 Bundle-ClassPath: .
-Import-Bundle: org.eclipse.rap.rwt;version="[2.0.0.20120821-1934,3)"
+Import-Bundle: org.eclipse.rap.rwt;version="[2.0.0.20121001-1623,3)"
