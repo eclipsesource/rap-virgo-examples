@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.eclipsesource.rap.examples</groupId>
+		<artifactId>com.eclipsesource.rap.examples.parent</artifactId>
+		<version>1.0.0.BUILD-SNAPSHOT</version>
+		<relativePath>../com.eclipsesource.rap.examples.releng/pom.xml</relativePath>
+	</parent>
+	<artifactId>com.eclipsesource.rap.examples.helloworld.webbundle</artifactId>
+	<name>com.eclipsesource.rap.examples.helloworld.webbundle</name>
+	<description>com.eclipsesource.rap.examples.helloworld.webbundle</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.eclipse.rap</groupId>
+			<artifactId>org.eclipse.rap.rwt</artifactId>
+			<version>2.0.0.20120821-1934</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/libs/org.eclipse.rap.rwt_2.0.0.20120821-1934.jar</systemPath>
+		</dependency>
+	</dependencies>
+</project>
+ 

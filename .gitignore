@@ -1,4 +1,6 @@
 com.eclipsesource.rap.examples.virgo/bin/
 com.eclipsesource.examples.virgo.blueprint.h2/bin
 com.eclipsesource.examples.virgo.blueprint.sql/bin
+com.eclipsesource.rap.examples.helloworld.webbundle/bin
+com.eclipsesource.rap.examples.helloworld.webbundle/target
 
