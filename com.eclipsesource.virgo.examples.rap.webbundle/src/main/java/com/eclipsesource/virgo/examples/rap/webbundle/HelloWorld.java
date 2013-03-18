@@ -1,6 +1,6 @@
-package com.eclipsesource.rap.examples.helloworld;
+package com.eclipsesource.virgo.examples.rap.webbundle;
 
-import org.eclipse.rap.rwt.lifecycle.IEntryPoint;
+import org.eclipse.rap.rwt.application.EntryPoint;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -13,7 +13,7 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 
-public class HelloWorld implements IEntryPoint {
+public class HelloWorld implements EntryPoint {
 
 	private String buttonText = "+1";
 

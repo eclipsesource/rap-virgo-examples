@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Bundle-Version: 1.0.0
-Bundle-Name: com.eclipsesource.rap.examples.helloworld.webbundle
-Bundle-ManifestVersion: 2
-Bundle-Description: ECLIPSESOURCE
-Bundle-SymbolicName: com.eclipsesource.rap.examples.helloworld.webbundle
-Web-ContextPath: /helloworld
-Bundle-ClassPath: .
-Import-Bundle: org.eclipse.rap.rwt;version="[2.0.0.20121001-1623,3)"

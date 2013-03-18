@@ -1,4 +1,4 @@
-package com.eclipsesource.rap.examples.helloworld;
+package com.eclipsesource.virgo.examples.rap.webbundle;
 
 import java.util.HashMap;
 import java.util.Map;

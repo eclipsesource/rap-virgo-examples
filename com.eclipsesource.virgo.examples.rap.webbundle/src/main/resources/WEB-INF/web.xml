@@ -4,7 +4,7 @@
 
 	<context-param>
 		<param-name>org.eclipse.rap.applicationConfiguration</param-name>
-		<param-value>com.eclipsesource.rap.examples.helloworld.HelloWorldConfiguration</param-value>
+		<param-value>com.eclipsesource.virgo.examples.rap.webbundle.HelloWorldConfiguration</param-value>
 	</context-param>
 
 	<listener>
