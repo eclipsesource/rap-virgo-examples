@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Bundle-Version: 1.0.0
-Bundle-Name: com.eclipsesource.examples.virgo
-Bundle-ManifestVersion: 2
-Bundle-Description: ECLIPSESOURCE
-Bundle-SymbolicName: com.eclipsesource.examples.virgo.blueprint
-Import-Bundle: com.springsource.org.h2;version="[1.0.71,1.0.71]"
-Import-Library: org.springframework.spring;version="[3.0.7.RELEASE,3.0.7.RELEASE]"
-Import-Package: javax.sql
