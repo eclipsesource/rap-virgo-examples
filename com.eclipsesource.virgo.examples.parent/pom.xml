@@ -30,6 +30,7 @@
 	<modules>
 		<module>../com.eclipsesource.virgo.examples.rap.webbundle</module>
 		<module>../com.eclipsesource.virgo.examples.blueprint.h2</module>
+		<module>../com.eclipsesource.virgo.examples.blueprint.sqlcommands</module>
 	</modules>
 
 	<build>
@@ -105,6 +106,11 @@
 				<groupId>com.h2database</groupId>
 				<artifactId>com.springsource.org.h2</artifactId>
 				<version>1.0.71</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>org.springframework.jdbc</artifactId>
+				<version>3.1.0.RELEASE</version>
 			</dependency>
 
 			<!-- JPA example -->

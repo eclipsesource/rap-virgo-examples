@@ -8,7 +8,7 @@
 		<property name="dataSource" ref="datasource" />
 	</bean>
 
-	<bean id="sqlCommandProvider" class="com.eclipsesource.examples.virgo.blueprint.sql.SqlCommandProvider">
+	<bean id="sqlCommandProvider" class="com.eclipsesource.virgo.examples.blueprint.sqlcommands.SqlCommandProvider">
 		<property name="jdbcTemplate" ref="jdbcTemplate" />
 	</bean>
 

@@ -1,4 +1,4 @@
-package com.eclipsesource.examples.virgo.blueprint.sql;
+package com.eclipsesource.virgo.examples.blueprint.sqlcommands;
 
 import org.springframework.jdbc.core.JdbcOperations;
 import org.springframework.util.StringUtils;
