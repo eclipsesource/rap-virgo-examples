@@ -63,6 +63,10 @@ For more information please refer to the RAP on Virgo tutorial:
 "Developing Web Application Bundles with RAP and Virgo"
 at http://eclipsesource.com/blogs/tutorials/developing-web-application-bundles-with-rap-and-virgo/
 
+Note: Jetty and the HttpService use the same port per default. So you have to configure either the HttpService or the default Jetty configuration.
+
+Provide org.osgi.service.http.port=18080 or change the port in jetty/etc/jetty.xml.
+
 #### Blueprint example - OSGi building blocks
 
 Build com.eclipsesource.examples.virgo.rap.webbundle:
