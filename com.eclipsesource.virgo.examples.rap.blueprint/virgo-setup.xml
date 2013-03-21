@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.eclipsesource.virgo.examples</groupId>
+		<artifactId>com.eclipsesource.virgo.examples.parent</artifactId>
+		<version>1.0.0.BUILD-SNAPSHOT</version>
+		<relativePath>../com.eclipsesource.virgo.examples.parent/pom.xml</relativePath>
+	</parent>
+
+	<artifactId>com.eclipsesource.virgo.examples.rap.webbundle.setup</artifactId>
+	<name>EclipseSource Virgo Examples (RAP helloworld packaged as WAB setup)</name>
+	<description>EclipseSource Virgo Examples (RAP helloworld packaged as WAB setup)</description>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<outputDirectory>${env.VIRGO_HOME}/repository/usr</outputDirectory>
+					<artifactItems>
+						<artifactItem>
+							<groupId>org.eclipse.rap</groupId>
+							<artifactId>org.eclipse.rap.rwt</artifactId>
+						</artifactItem>
+						<artifactItem>
+							<groupId>org.eclipse.rap</groupId>
+							<artifactId>org.eclipse.rap.rwt.osgi</artifactId>
+						</artifactItem>
+					</artifactItems>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

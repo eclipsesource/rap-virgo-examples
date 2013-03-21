@@ -29,6 +29,7 @@
 
 	<modules>
 		<module>../com.eclipsesource.virgo.examples.rap.webbundle</module>
+		<module>../com.eclipsesource.virgo.examples.rap.blueprint</module>
 		<module>../com.eclipsesource.virgo.examples.blueprint.h2</module>
 		<module>../com.eclipsesource.virgo.examples.blueprint.sqlcommands</module>
 	</modules>
@@ -97,6 +98,13 @@
 			<dependency>
 				<groupId>org.eclipse.rap</groupId>
 				<artifactId>org.eclipse.rap.rwt</artifactId>
+				<version>${rap.version}</version>
+				<scope>compile</scope>
+			</dependency>
+			<!-- RAP example with OSGi integration -->
+			<dependency>
+				<groupId>org.eclipse.rap</groupId>
+				<artifactId>org.eclipse.rap.rwt.osgi</artifactId>
 				<version>${rap.version}</version>
 				<scope>compile</scope>
 			</dependency>

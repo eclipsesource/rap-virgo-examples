@@ -1,0 +1,11 @@
+<plan name="rap.blueprint" version="1.0.0.BUILD-SNAPSHOT" scoped="false" atomic="true"
+                xmlns="http://www.eclipse.org/virgo/schema/plan"
+				xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				xsi:schemaLocation="
+					http://www.eclipse.org/virgo/schema/plan
+					http://www.eclipse.org/virgo/schema/plan/eclipse-virgo-plan.xsd">
+
+        <artifact type="bundle" name="org.eclipse.rap.rwt.osgi" version="[2.0.0, 3)"/>
+        <artifact type="bundle" name="org.eclipse.equinox.http.servlet" version="[1.1.300, 2)" />
+        <artifact type="bundle" name="org.eclipse.equinox.http.jetty" version="[3.0.0, 4)" />
+</plan>
