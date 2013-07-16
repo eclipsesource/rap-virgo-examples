@@ -6,6 +6,7 @@ This repository contains a collection of OSGi projects developed with Virgo:
 * RAP example - with OSGi integration via blueprint
 * Blueprint - export embedded H2 DataSource via OSGi service
 * Blueprint - consume the DataSource and provide some OSGi console commands
+* Blueprint - dynamically update beans via OSGi Configuration Admin
 
 #### RAP helloworld packaged as Web Application Bundle (WAB)
 
@@ -87,3 +88,22 @@ Now you have additional OSGi console commands.
 For more information please refer to the blog post
 "How to create blueprints for your OSGi building blocks"
 at http://eclipsesource.com/blogs/2012/08/11/how-to-create-blueprints-for-your-osgi-building-blocks/
+
+#### Blueprint example - Configuration Admin ####
+
+Drop com.eclipsesource.virgo.examples.blueprint.cm into the pickup of your Virgo server.
+
+To trigger the dynamic change of the beans drop configurations into the pickup folder.
+
+Use labX.properties to test autowire-on-update and labY.properties to test update-method approach.
+
+labX.properties:
+```
+integer=42
+```
+
+labY.properties:
+```
+foo=bar
+```
+
