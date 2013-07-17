@@ -32,6 +32,7 @@
 		<module>../com.eclipsesource.virgo.examples.rap.blueprint</module>
 		<module>../com.eclipsesource.virgo.examples.blueprint.h2</module>
 		<module>../com.eclipsesource.virgo.examples.blueprint.sqlcommands</module>
+		<module>../com.eclipsesource.virgo.examples.blueprint.cm</module>
 	</modules>
 
 	<build>
