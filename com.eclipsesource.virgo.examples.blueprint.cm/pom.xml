@@ -23,7 +23,8 @@
 							org.springframework.spring;version="[3.0.7.RELEASE,4)"
 						</Import-Library>
 						<Import-Package>
-							org.osgi.service.cm
+							!org.osgi.service.blueprint,
+							*
 						</Import-Package>
 						<Bundle-Classpath>
 							.
