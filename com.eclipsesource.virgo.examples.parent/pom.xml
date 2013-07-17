@@ -34,6 +34,7 @@
 		<module>../com.eclipsesource.virgo.examples.blueprint.sqlcommands</module>
 		<module>../com.eclipsesource.virgo.examples.blueprint.cm</module>
 		<module>../com.eclipsesource.virgo.examples.blueprint.ltw</module>
+		<module>../com.eclipsesource.virgo.examples.spring.aop</module>
 	</modules>
 
 	<build>
