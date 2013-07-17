@@ -1,0 +1,9 @@
+<!DOCTYPE aspectj PUBLIC "-//AspectJ//DTD//EN" "http://www.eclipse.org/aspectj/dtd/aspectj.dtd">
+<aspectj>
+	<weaver options="-verbose -showWeaveInfo -debug">
+		<include within="com.eclipsesource.virgo.examples.blueprint.ltw.internal.*" />
+	</weaver>
+	<aspects>
+		<aspect name="com.eclipsesource.virgo.examples.blueprint.ltw.internal.Chronometry" />
+	</aspects>
+</aspectj>

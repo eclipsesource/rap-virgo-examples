@@ -33,6 +33,7 @@
 		<module>../com.eclipsesource.virgo.examples.blueprint.h2</module>
 		<module>../com.eclipsesource.virgo.examples.blueprint.sqlcommands</module>
 		<module>../com.eclipsesource.virgo.examples.blueprint.cm</module>
+		<module>../com.eclipsesource.virgo.examples.blueprint.ltw</module>
 	</modules>
 
 	<build>
@@ -110,7 +111,7 @@
 				<scope>compile</scope>
 			</dependency>
 
-			<!-- blueprint example -->
+			<!-- blueprint examples -->
 			<dependency>
 				<groupId>com.h2database</groupId>
 				<artifactId>com.springsource.org.h2</artifactId>
@@ -118,8 +119,20 @@
 			</dependency>
 			<dependency>
 				<groupId>org.springframework</groupId>
+				<artifactId>org.springframework.context</artifactId>
+				<version>3.1.0.RELEASE</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
 				<artifactId>org.springframework.jdbc</artifactId>
 				<version>3.1.0.RELEASE</version>
+			</dependency>
+
+			<!-- load time weaving example -->
+			<dependency>
+				<groupId>org.aspectj</groupId>
+				<artifactId>com.springsource.org.aspectj.runtime</artifactId>
+				<version>1.6.12.RELEASE</version>
 			</dependency>
 
 			<!-- JPA example -->
